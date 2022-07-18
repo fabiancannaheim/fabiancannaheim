@@ -73,32 +73,32 @@ public class DijkstraAlgorithm {
 
     }
 
-}
+    class Node implements Comparable<Node>  {
+        public String value;
+        public boolean mark;
+        public double distance;
+        public Node previous;
+        public List<Edge> edges;
+        public Node (String value) {
+            edges = new ArrayList<>();
+            this.value = value;
+        }
+        @Override
+        public int compareTo(Node o) {
+            return (int)(distance - o.distance);
+        }
+        public String toString() {
+            return value + " " + distance;
+        }
+    }
 
-public class Edge {
-    public double weight;
-    public Node destination;
-    public Edge(double weight, Node destination) {
-        this.weight = weight;
-        this.destination = destination;
+    class Edge {
+        public double weight;
+        public Node destination;
+        public Edge(double weight, Node destination) {
+            this.weight = weight;
+            this.destination = destination;
+        }
     }
-}
 
-public class Node implements Comparable<Node>  {
-    public String value;
-    public boolean mark;
-    public double distance;
-    public Node previous;
-    public List<Edge> edges;
-    public Node (String value) {
-        edges = new ArrayList<>();
-        this.value = value;
-    }
-    @Override
-    public int compareTo(Node o) {
-        return (int)(distance - o.distance);
-    }
-    public String toString() {
-        return value + " " + distance;
-    }
 }
