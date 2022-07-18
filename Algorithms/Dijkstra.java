@@ -13,16 +13,16 @@ public class DijkstraAlgorithm {
 
         this.prepare();
 
-        Queue<DijkstraNode> queue = new PriorityQueue();
+        Queue<Node> queue = new PriorityQueue();
         A.distance = 0;
         A.mark = true;
         queue.add(A);
         while(!queue.isEmpty()) {
-            DijkstraNode currentNode = (DijkstraNode) queue.poll();
+            Node currentNode = (Node) queue.poll();
             currentNode.mark = true;
             if (currentNode.equals(E)) break;
-            for (DijkstraEdge edge : currentNode.edges) {
-                DijkstraNode destination = edge.destination;
+            for (Edge edge : currentNode.edges) {
+                Node destination = edge.destination;
                 if (!destination.mark) {
                     double distance = currentNode.distance + edge.weight;
                     if ((destination.previous == null) || (distance < destination.distance)) {
@@ -34,7 +34,7 @@ public class DijkstraAlgorithm {
             }
         }
 
-        DijkstraNode node = E;
+        Node node = E;
         do {
             System.out.print(node);
             node = node.previous;
@@ -77,8 +77,8 @@ public class DijkstraAlgorithm {
 
 public class Edge {
     public double weight;
-    public DijkstraNode destination;
-    public DijkstraEdge(double weight, DijkstraNode destination) {
+    public Node destination;
+    public Edge(double weight, Node destination) {
         this.weight = weight;
         this.destination = destination;
     }
@@ -88,14 +88,14 @@ public class Node implements Comparable<Node>  {
     public String value;
     public boolean mark;
     public double distance;
-    public DijkstraNode previous;
-    public List<DijkstraEdge> edges;
-    public DijkstraNode (String value) {
+    public Node previous;
+    public List<Edge> edges;
+    public Node (String value) {
         edges = new ArrayList<>();
         this.value = value;
     }
     @Override
-    public int compareTo(DijkstraNode o) {
+    public int compareTo(Node o) {
         return (int)(distance - o.distance);
     }
     public String toString() {
