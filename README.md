@@ -1,3 +1,12 @@
+# fabiancannaheim
+
+[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)](http://makeapullrequest.com)
+[![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat-square)](http://www.firsttimersonly.com/)
+[![GitHub Issues](https://img.shields.io/github/issues/fabiancannaheim/fabiancannaheim.svg?style=flat-square)](https://github.com/fabiancannaheim/fabiancannaheim/issues) 
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fabiancannaheim/fabiancannaheim.svg?style=flat-square)](https://github.com/fabiancannaheim/fabiancannaheim/pulls) 
+[![Forks](https://img.shields.io/github/forks/fabiancannaheim/fabiancannaheim.svg)](https://github.com/fabiancannaheim/fabiancannaheim/network)
+[![Stargazers](https://img.shields.io/github/stars/fabiancannaheim/fabiancannaheim.svg)](https://github.com/fabiancannaheim/fabiancannaheim/stargazers)
+
 - 👋 Hi, I’m @fabiancannaheim
 - 👀 I’m interested in **absolutely everything**!
 - 🌱 I’m currently studying **computer science at Zurich University of Applied Sciences**
