@@ -1,6 +1,5 @@
 # fabiancannaheim
 
-[![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat-square)](http://www.firsttimersonly.com/)
 [![GitHub Issues](https://img.shields.io/github/issues/fabiancannaheim/fabiancannaheim.svg?style=flat-square)](https://github.com/fabiancannaheim/fabiancannaheim/issues) 
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fabiancannaheim/fabiancannaheim.svg?style=flat-square)](https://github.com/fabiancannaheim/fabiancannaheim/pulls) 
 [![Forks](https://img.shields.io/github/forks/fabiancannaheim/fabiancannaheim.svg)](https://github.com/fabiancannaheim/fabiancannaheim/network)
